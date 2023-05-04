@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="secondary">
+    <ion-title class="cnt">Register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+      
+    <div id="container">
+
+      <ion-row>
+        <ion-img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwb7evEnD5iByq5wW2YMXuS7DkhCz5ovynCpsWQwz1eg&s" class="imgcnt"></ion-img>
+      </ion-row>
+
+        <ion-input
+        type="text"
+        fill="solid"
+        label="UserName"
+        labelPlacement="floating"
+        helperText="Enter a valid UserName"
+        errorText="Invalid UserName"
+        ngModel 
+        
+      ></ion-input>
+
+      <ion-input
+      type="Password"
+      fill="solid"
+      label="Password"
+      labelPlacement="floating"
+      helperText="Enter a valid Password"
+      errorText="Invalid Password"
+      ngModel 
+      
+      class="mg10"
+    ></ion-input>
+
+    <ion-input
+      type="email"
+      fill="solid"
+      label="Email"
+      labelPlacement="floating"
+      helperText="Enter a valid Email"
+      errorText="Invalid Email"
+      ngModel 
+      
+      class="mg10"
+    ></ion-input>
+
+    <ion-input
+      type="number"
+      fill="solid"
+      label="Mobile"
+      labelPlacement="floating"
+      helperText="Enter a valid MobileNumber"
+      errorText="Invalid MobileNumber"
+      ngModel 
+      
+      class="mg10"
+    ></ion-input>
+    
+      <ion-row class="mg12 btndwn">
+        <ion-button color="secondary" class="cnts btnwdt">Register</ion-button>
+      </ion-row>
+    </div>
+      
+</ion-content>
+
+<ion-footer>
+<ion-toolbar color="secondary">
+   <p class="cnt">You have a account <b class="underl" routerLink="/login">SignIn?</b></p>
+</ion-toolbar>
+</ion-footer>
